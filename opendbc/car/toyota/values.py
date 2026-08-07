@@ -43,7 +43,7 @@ class CarControllerParams:
     self.ACCEL_MIN = -3.5  # m/s2
 
     if CP.lateralTuning.which() == 'torque':
-      self.STEER_DELTA_UP = 25       # default 15, 1.0s time to peak torque
+      self.STEER_DELTA_UP = 20       # default 15, 1.0s time to peak torque
       self.STEER_DELTA_DOWN = 35     # default 25, always lower than 45 otherwise the Rav4 faults (Prius seems ok with 50)
     else:
       self.STEER_DELTA_UP = 20       # default 10, 1.5s time to peak torque
